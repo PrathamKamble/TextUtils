@@ -4,17 +4,10 @@ import PropTypes from 'prop-types'
 export default function Navbar(props) {
   return (
     <>
-<nav className={`navbar navbar-expand-lg px-5`} style={{backgroundColor: '#e3f2fd'}}>
+<nav className={`navbar navbar-expand-lg fixed-top px-5`} style={{backgroundColor: '#e3f2fd'}}>
   <div className="container-fluid">
 
     <a className="navbar-brand gradient_text" href="/">{props.title}</a>
-
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    
-    <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-        {/* <div className={`form-check form-switch text-${props.mode==='#e3f2fd'?'dark':'light'}`}>  */}
 
         <div class="toggle-switch">
           <label class="switch">
@@ -24,8 +17,6 @@ export default function Navbar(props) {
             <span class="slider"></span>
           </label>
         </div>  
-
-    </div>
   </div>
 </nav>
 </>

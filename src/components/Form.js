@@ -40,9 +40,9 @@ export default function Form(props) {
         <div className='container'>
             <h1><strong>Analyze Your <span className='gradient_text'>Text</span> Here</strong></h1>
             <div class="mb-3">
-                <textarea class="form-control" value={Text} onChange={UpChange} id="myBox" rows="20" cols="10" placeholder='Enter Text Here'></textarea>
+                <textarea class="form-control" value={Text} onChange={UpChange} id="myBox" rows="18" cols="10" placeholder='Enter Text Here'></textarea>
             </div>
-                <button  className="button-86" onClick={extraSpaces}><i className="fas fa-eraser"></i></button>
+                <button  className="button-86 mx-3 my-1" onClick={extraSpaces}><i className="fas fa-eraser"></i></button>
 
                 <button  className="button-86 mx-3 my-1" onClick={Copy}><i className="fas fa-copy"></i></button>
 
